@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Before You Checkout</title>
+<style>
+  :root{ --navy:#1B3A4B; --sand:#F4EFE3; --charcoal:#2B2B2B; --white:#FFF; --rust:#B4612F; }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  body{ font-family:'Calibri','Inter',Arial,sans-serif; background:var(--sand); color:var(--charcoal); line-height:1.6; }
+  .wrap{ max-width:600px; margin:0 auto; padding:56px 24px 80px; }
+  .eyebrow{ text-align:center; color:var(--rust); font-size:13px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; margin-bottom:14px; }
+  h1{ font-family:Georgia,serif; color:var(--navy); font-size:28px; text-align:center; margin-bottom:10px; }
+  .sub{ text-align:center; color:#555; margin-bottom:36px; font-size:16px; }
+  .order-summary{ background:var(--white); border:1px solid #ded2bb; border-radius:10px; padding:20px 24px; margin-bottom:30px; display:flex; justify-content:space-between; align-items:center; }
+  .order-summary .item{ font-weight:700; color:var(--navy); }
+  .bump-box{ background:var(--navy); color:var(--sand); border-radius:12px; padding:30px; text-align:center; margin-bottom:24px; }
+  .bump-box .badge{ display:inline-block; background:var(--rust); color:var(--white); font-size:11px; font-weight:700; padding:4px 12px; border-radius:12px; text-transform:uppercase; letter-spacing:.05em; margin-bottom:14px; }
+  .bump-box h2{ font-family:Georgia,serif; font-size:22px; color:var(--white); margin-bottom:12px; }
+  .bump-box p{ color:#dcd3c0; font-size:15px; margin-bottom:20px; }
+  .checkbox-row{ display:flex; align-items:center; justify-content:center; gap:10px; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.3); border-radius:8px; padding:16px; margin:18px 0; }
+  .btn-row{ display:flex; flex-direction:column; gap:10px; align-items:center; margin-top:10px; }
+  .yes{ display:block; background:var(--rust); color:var(--white); font-weight:700; text-decoration:none; padding:15px 30px; border-radius:8px; width:100%; max-width:340px; text-align:center; }
+  .yes:hover{ background:#93501f; }
+  .no{ color:#dcd3c0; text-decoration:underline; font-size:14px; }
+  footer{ text-align:center; font-size:13px; color:#888; margin-top:50px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">One Quick Thing Before Checkout</div>
+  <h1>You're About to Get the Great Lakes Insider</h1>
+  <p class="sub">Before you check out — one option worth a look.</p>
+
+  <div class="order-summary">
+    <span class="item">Great Lakes Insider Playbook</span>
+    <span>$19</span>
+  </div>
+
+  <div class="bump-box">
+    <span class="badge">Add for just $9 more</span>
+    <h2>Add the Season Dates & License Quick-Reference Card</h2>
+    <p>A single printable page — every season window and license reminder from the guide, condensed for your tackle box, glove box, or wall.</p>
+    <div class="checkbox-row">
+      <span style="font-size:20px;">☑</span>
+      <label>Yes, add the Quick-Reference Card to my order</label>
+    </div>
+    <div class="btn-row">
+      <a class="yes" href="https://buy.stripe.com/14AdRbebiek88UTa0F7AI04">Continue to Checkout — $28 Total</a>
+      <a class="no" href="https://buy.stripe.com/9B65kF2sAcc03Azb4J7AI03">No thanks, just the Playbook — $19</a>
+    </div>
+  </div>
+
+  <footer>The Great Lakes Insider · Michigan Outdoors</footer>
+</div>
+</body>
+</html>
